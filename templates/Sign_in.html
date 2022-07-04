@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='Sign_up.css')}}">
+</head>
+<body>
+    <div class="sign_up">
+        <div class="field">
+            <div class="form">
+                <form action="/form_login" method="post" >
+                    <h1 id="title">LOG-IN</h1>
+                    <input type="text" placeholder="Name" name="username" class="input" >
+                    <br>
+        
+                    <input type="password" placeholder="Password" name="password" class="input">
+                    <br>
+                    
+                    <input type="submit" value="LOGIN" id="submit">
+                </form>
+            </div>    
+        </div> 
+        <div class="photo">
+            <img src=" {{url_for('static',filename='tim-toomey-IW9mC6wEXbk-unsplash.jpg')}} " alt="" id="tim">
+        </div>
+    </div>    
+</body>
+</html>

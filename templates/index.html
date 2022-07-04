@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+</head>
+<body>
+  <header>
+        <div class="logo"><img src="{{url_for('static',filename='2020-Logo-Stacked-Vector-Small-Version.-png.png')}}" alt="" id="logo"></div>
+        <nav class="main-nav">
+            <ul class="nav-list">
+                <a href="Sign_up.html" style="text-decoration: none; color:white;">
+                    <li class="nav_link">Sign up</li>
+                </a>
+                <li class="nav_link" style="color: white;">EN</li>
+                <li class="nav_link"><a href=""><img src="{{url_for('static',filename='chercher.png')}}" alt="chercher.png" id="search"></a></li>
+            </ul>
+        </nav>
+        <div class="menu">
+            <p id="menu">MENU</p>
+        </div>
+  </header> 
+  <main>
+    <section class="accueil">
+        <div class="background">
+        <img src="{{url_for('static',filename='nadin-mario-al2FHdZKxpU-unsplash.jpg')}}" alt="" class="fill-background">
+        </div>
+    </section>
+  </main> 
+</body>
+</html>

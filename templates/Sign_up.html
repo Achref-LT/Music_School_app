@@ -9,13 +9,14 @@
     <div class="sign_up">
         <div class="field">
             <div class="form">
-                <form action="" method="get" >
+                <form action="{{url_for('register')}}" method="post" >
                     <h1 id="title">SIGN UP</h1>
-                    <input type="text" placeholder="Name" class="input" >
+                    <div class="msg" style="color: rgb(167, 29, 29);">{{message}}</div>
+                    <input type="text" placeholder="Name" class="input" name="username">
                     <br>
-                    <input type="email" placeholder="Email" class="input">
+                    <input type="email" placeholder="Email" class="input" name="email">
                     <br>
-                    <input type="password" placeholder="Password" class="input">
+                    <input type="password" placeholder="Password" class="input" name="password">
                     <br>
                     <input type="checkbox" id="agree" name="agree">
                     <label for="agree">I agree to the school privacy policy</label>

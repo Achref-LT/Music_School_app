@@ -18,9 +18,11 @@ input::placeholder{
     font-size: 20px;
 }
 #submit{
-    position:relative;
+    position:static;
     left:13%;
     margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 8px 10px;
     width: 110px;
     font-size: 18px;
@@ -35,9 +37,9 @@ input::placeholder{
     top: 150px;
 }
 #title{
-    position:relative;
+    position:static;
+    text-align: center;
     font-weight: 500;
-    right: 30px;
     margin-bottom: 40px;
 }
 .field{
@@ -56,4 +58,25 @@ input::placeholder{
     border-radius: 10px;
     position:relative;
     left:100px;
+}
+
+
+.buttons{
+    display: inline-block;
+}
+#sign_up{
+    position:static;
+    margin-top: 30px;
+    margin-right: 50px;
+    margin-left: auto;
+    padding: 8px 10px;
+    width: 86px;
+    font-size: 18px;
+    font-weight: 500;
+    border-width:2px ;
+    background-color: white;
+    text-align: center;
+    border-color: black;
+    cursor: pointer;
+
 }

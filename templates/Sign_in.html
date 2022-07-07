@@ -11,13 +11,16 @@
             <div class="form">
                 <form action="{{url_for('login')}}" method="post" >
                     <h1 id="title">LOG-IN</h1>
+                    <div class="msg" style="color: rgb(167, 29, 29);">{{message}}</div>
                     <input type="text" placeholder="Name" name="username" class="input" >
                     <br>
         
                     <input type="password" placeholder="Password" name="password" class="input">
                     <br>
-                    
+                    <div class="buttons">
+                    <a href="{{url_for('sign_up')}}"><input type="text" value="Sign_up" id="sign_up" onclick="sign_up()"></a>
                     <input type="submit" value="LOGIN" id="submit">
+                    </div>
                 </form>
             </div>    
         </div> 

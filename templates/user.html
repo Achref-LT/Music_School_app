@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welecome</title>
+    <title>Welecome {{user}}</title>
     <link rel="stylesheet" href="{{url_for('static',filename='user.css')}}">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <div class="logo"><img src="{{url_for('static',filename='2020-Logo-Stacked-Vector-Small-Version.-png.png')}}" alt="" id="logo"></div>
         <nav class="main-nav">
             <ul class="nav-list">
-                <a href="Sign_up.html" style="text-decoration: none; color:black">
+                <a href="{{url_for('logout')}}" style="text-decoration: none; color:black">
                     <li class="nav_link" style="font-size: 18px;">Sign out</li>
                 </a>
                 <li class="nav_link" style="font-size: 18px;">EN</li>

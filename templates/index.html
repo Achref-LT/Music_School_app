@@ -6,8 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="{{url_for('static', filename='index.css')}}">
+    <script src="{{url_for('static', filename='home.js')}}"></script>
 </head>
 <body>
+
+
+    <div class="MyNav" id="MyNav">
+        <div class="Nav_content">
+            <h1 id="Nav_list-title">MENU</h1>
+            <ul class="Nav_elements">
+                <li class="Nav_list-item" onmouseover="study();" onmouseout="hideStudy();">STUDY</li>
+                <li class="Nav_list-item" onclick="">STUDENT LIFE</li>
+                <li class="Nav_list-item" onclick="">ADMISSION</li>
+                <li class="Nav_list-item" onmouseover="whatsOn();" onmouseout="hideWhatsOn();" >WHAT'S ON</li>
+            </ul>
+        </div>
+        <div class="annex" id="annex">
+            <button id="close" onclick="hideMenu()" value="open">CLOSE</button>
+            <img src="{{url_for('static',filename='joel-wyncott-YY3ijZa2lGQ-unsplash.jpg')}}" alt="" id="annex_img">
+        </div>
+      </div>  
+
+
   <header>
         <div class="logo"><img src="{{url_for('static',filename='2020-Logo-Stacked-Vector-Small-Version.-png.png')}}" alt="" id="logo"></div>
         <nav class="main-nav">
@@ -20,7 +40,7 @@
             </ul>
         </nav>
         <div class="menu">
-            <p id="menu">MENU</p>
+            <button id="menu" onclick="displayMenu()" value="open">MENU</button>
         </div>
   </header> 
   <main>

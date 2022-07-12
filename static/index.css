@@ -5,7 +5,7 @@ html { font-family: 'Inter', sans-serif; }
 }
 
 header{
-    position: fixed;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,12 +38,13 @@ header{
     margin-right: 20px;
 }
 #menu{
-    flex-grow: 0.05;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
+    transform:rotate(90deg);
+    border: none;
+    background: none;
     font-size: 30px;
     font-weight: 500;
-    color: white;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 .background{
     display: flex;
@@ -53,4 +54,72 @@ header{
 }
 .fill-background{
 width: 100%;
+}
+
+/*__________________________________________________________________*/
+/*_______________________________MENU_______________________________*/
+/*__________________________________________________________________*/
+
+.MyNav{
+    background-color: #fff;
+    position:fixed;
+    height: 100vh;
+    width: 100vw;
+    visibility: hidden;
+    z-index: 1;
+}
+.Nav_content{
+    float: left;
+    width: 50%;
+}
+.annex{
+    float: right;
+    width: 50%;
+}
+.Nav_elements{
+    position: relative;
+    white-space: nowrap;
+    width: 1em;
+    left: 15vw;
+    top: 25vh;
+    padding: 0;
+    list-style: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+#annex_img{
+    height: 65vh;
+    position: relative;
+    top: 18vh;
+    left: 130px;
+    filter: contrast(120%);
+    filter: saturate(60%);
+}
+li.Nav_list-item:not(:first-of-type){
+    padding-top: 0.5em;
+}
+li.Nav_list-item:not(:last-of-type){
+    padding-bottom: 0.5em;
+}
+#Nav_list-title{
+    position: relative;
+    top: 15vh;
+    left: 15vw;  
+    font-size: 45px;  
+}
+li.Nav_list-item:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+#close{
+    position: fixed;
+    top: 10vh;
+    right: 20px;
+    transform:rotate(90deg);
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
 }
